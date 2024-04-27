@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import pageobjects.HomePage;
 import pageobjects.LandingPage;
 import resources.Base;
@@ -47,6 +48,8 @@ public class LoginTest extends Base {
 		Thread.sleep(2000);
 		landingpage.loginbutt().click();
 		log.debug("login button is clicked");
+		
+		System.out.println("changes made for git");
         
 		HomePage homepage = new HomePage(driver);
 		Thread.sleep(3000);
