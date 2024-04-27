@@ -14,6 +14,7 @@ public class SecondTest extends Base {
 	  public void sample() throws IOException, InterruptedException
 	  {
 		   System.out.println("changes made directly in git");
+		   System.out.println("changes made again to add in new branch");
 			driver= initialiseDriver();
 			driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
 			Assert.assertTrue(false);
