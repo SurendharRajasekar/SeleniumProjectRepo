@@ -13,6 +13,7 @@ public class SecondTest extends Base {
 	 @Test
 	  public void sample() throws IOException, InterruptedException
 	  {
+		   System.out.println("changes made directly in git");
 			driver= initialiseDriver();
 			driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
 			Assert.assertTrue(false);
